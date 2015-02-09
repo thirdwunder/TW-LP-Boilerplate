@@ -1,0 +1,18 @@
+[submodule "lib/tw-core"]
+	path = lib/tw-core
+	url = https://mohamedhamad@github.com/thirdwunder/tw-core.git
+[submodule "lib/bootstrap"]
+	path = lib/bootstrap
+	url = https://mohamedhamad@github.com/twbs/bootstrap.git
+[submodule "lib/fontawesome"]
+	path = lib/fontawesome
+	url = https://mohamedhamad@github.com/FortAwesome/Font-Awesome.git
+[submodule "lib/isotope"]
+	path = lib/isotope
+	url = https://mohamedhamad@github.com/metafizzy/isotope.git
+[submodule "lib/mobile-detect"]
+	path = lib/mobile-detect
+	url = https://mohamedhamad@github.com/serbanghita/Mobile-Detect.git
+[submodule "lib/respond"]
+	path = lib/respond
+	url = https://mohamedhamad@github.com/scottjehl/Respond.git
