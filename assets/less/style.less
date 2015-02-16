@@ -1,0 +1,146 @@
+/*
+Theme Name: Third Wunder Generic Landing Page Theme
+Theme URI: http://www.thirdwunder.com
+Description: Responsive theme based on the Bootstrap 3 framework.
+Version: 1.0
+Author: Mohamed Hamad
+Author URI: http://www.thirdwunder.com
+Text Domain: tw
+Tags: one-column, two-columns, right-sidebar, theme-options, translation-ready
+License:
+License URI: http://www.thirdwunder.com
+
+For modern browsers */
+/***** Fonts.com Families *****/
+@import url(http://fast.fonts.net/cssapi/6a768bb3-431e-4370-892d-6ed687dbbe29.css);
+@font-museo-700:'Museo Slab W01_700';
+@font-museo-700-italic:'MuseoSlabW01-700Italic';
+@font-fgoth-book-condensed:'ITCFranklinGothicW01-Bk_812647';
+@font-fgoth-book-condensed-italic:'ITCFranklinGothicW01-Bk_812665';
+@font-fgoth-book-condensed-medium:'ITCFranklinGothicW01-Md_812695';
+@font-fgoth-heavy:'ITCFranklinGothicW01-Hv_812689';
+@font-fgoth-demi-condensed:'ITCFranklinGothicW01-Dm_812671';
+
+/***** Font Awesome *****/
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../lib/fontawesome/fonts/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../../lib/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'),
+       url('../../lib/fontawesome/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'),
+       url('../../lib/fontawesome/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'),
+       url('../../lib/fontawesome/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***** 3rd Party Imports *****/
+@import        "../../lib/bootstrap/less/bootstrap.less";
+//@import        "../../lib/jasny/less/jasny-bootstrap.less";
+@import        "../../lib/fontawesome/less/font-awesome.less";
+@fa-font-path: "../../lib/fontawesome/fonts";
+
+
+/***** Third Wunder Imports *****/
+@import "../../lib/tw-core/less/tw-functions.less";
+@import "../../lib/tw-core/less/tw-gravityforms.less";
+@import "../../lib/tw-core/less/tw-isotope.less";
+@import "../../lib/tw-core/less/tw-colors-social.less";
+@import "../../lib/tw-core/less/tw-wp-general.less";
+@import "../../lib/tw-core/less/tw-wp-widgets.less";
+@import "../../lib/tw-core/less/tw-base-fonts.less";
+@import "../../lib/tw-core/less/tw-landing-page.less";
+@import "../../lib/tw-core/less/tw-plugin.less";
+
+@import "thirdwunder.less";
+
+/***** Color Definitions *****/
+@color-primary: @tw-green;
+@color-primary-dark: @tw-green-medium;
+@color-primary-light: @tw-green-dark;
+
+@color-secondary: #666;
+@color-secondary-dark: #555;
+@color-secondary-light: #777;
+
+@color-tertiary: #999;
+@color-tertiary-dark: #888;
+@color-tertiary-light: #ccc;
+
+
+@color-heading: @tw-grey-dark;
+@color-line-light: #e1e1e1;
+@color-line-dark: @color-green;
+@color-caption-bg: #f9f9f9;
+
+@color-inverse-bg: @tw-grey-dark;
+@color-inverse-body: #fff;
+@color-inverse-line: @tw-grey;
+@color-inverse-link: @color-green;
+@color-inverse-link-hover: @color-green-lighter;
+
+@color-menu-bg-base: fade(#fff,92%);
+@color-menu-border: transparent;
+
+@color-menu-body: @color-grey;
+@color-menu-bg: transparent;
+
+@color-menu-body-hover: #fff;
+@color-menu-bg-hover: @color-green-dark;
+
+@color-menu-body-selected: #fff;
+@color-menu-bg-selected: @color-green;
+
+@color-menu-bg-inverse-hover: @color-green-light;
+@color-menu-bg-inverse-selected: @color-green;
+
+@color-breadcrumb-bg: #f5f5f5;
+@color-breadcrumb-body: #555;
+
+
+/***** Font Definitions *****/
+@font-fontawesome: 'FontAwesome';
+@font-heading: @font-fgoth-demi-condensed;
+@font-body: @font-fgoth-book-condensed;
+@font-blockquote: @font-museo-700-italic;
+@font-menu: @font-fgoth-book-condensed;
+
+/**** Bootstrap Scaffolding ***/
+@body-bg:    #fff;
+@text-color: @tw-grey-medium;
+
+@font-family-sans-serif:  @font-museo-700;
+@font-family-serif:       @font-fgoth-book-condensed;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-fgoth-book-condensed;
+
+@font-size-base:          16px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~20px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~14px
+
+@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
+@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
+@font-size-h5:            @font-size-base;
+@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@headings-font-family:    @font-heading;
+@headings-font-weight:    200;
+@headings-line-height:    1.1;
+@headings-color:          @color-heading;
+
+@border-radius-base:             4px;
+@border-radius-large:            6px;
+@border-radius-small:            3px;
+
+@brand-primary: @color-green-light;
+@brand-success: @color-green;
+@brand-info:    @color-purple-light;
+@brand-warning: @color-orange;
+@brand-danger:  @color-red-light;
+
+@link-color:       @color-green; //@color-green-dark;
+@link-hover-color: darken(@link-color, 15%);
