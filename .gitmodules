@@ -16,3 +16,6 @@
 [submodule "lib/respond"]
 	path = lib/respond
 	url = https://mohamedhamad@github.com/scottjehl/Respond.git
+[submodule "lib/html5shiv"]
+	path = lib/html5shiv
+	url = https://mohamedhamad@github.com/aFarkas/html5shiv.git
