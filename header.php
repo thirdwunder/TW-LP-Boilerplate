@@ -18,7 +18,7 @@
   <title><?php wp_title( '|', true, 'right' ); ?></title>
 
   <!-- CSS stylesheet file -->
-  <link rel="stylesheet" href="<?php echo $path; ?>assets/css/styles.css" />
+  <link rel="stylesheet" href="<?php echo $path; ?>assets/css/style.css" />
 
   <!-- wordpress head functions -->
   <?php wp_head(); ?>
@@ -41,3 +41,20 @@
 
 </head>
 <body>
+  <!-- Site Header -->
+  <header id="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+    <nav id="menu-primary" role="navigation" class="<?php if($top_menu){ echo 'with-top';}?> navbar navbar-default navbar-fixed-top" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand navbar-brand-logo" href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" rel="home">
+            <img src="<?php echo tw_get_logo(); ?>" alt="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>" />
+            <span class="sr-only"><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></span>
+          </a> <!-- .navbar-brand -->
+        </div><!-- .navbar-header -->
+      </div><!-- .container-fluid -->
+    </nav><!-- #menu-primary -->
+  </header><!-- #site-header -->
+
+  <!-- Site Container -->
+  <div id="site-content" class="container">
+    <div id="site-container" class="row">

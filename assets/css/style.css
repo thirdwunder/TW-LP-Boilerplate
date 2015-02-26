@@ -12316,3 +12316,11 @@ textarea.widget_categories .postform {
 /***** Color Definitions *****/
 /***** Font Definitions *****/
 /**** Bootstrap Scaffolding ***/
+#site-content {
+  margin-top: 0;
+}
+.gfield,
+.gform_footer {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}

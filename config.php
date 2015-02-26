@@ -25,5 +25,23 @@ array(
 //************************************************
 // Add User Options to Your Landing Page Template
 //************************************************
-
+$lp_data[$key]['settings'][] =
+        array(
+          'label' => "Tracking Code",
+          'description' => "Tracking Code",
+          'id' => "tracking-code",
+          'type'  => 'text',
+          'default'  => '',
+          'context'  => 'normal'
+        );
+$lp_data[$key]['settings'][] =
+      array(
+        'label' => "Video URL",
+        'description' => "URL of a promotional video to show in the header",
+        'id'  => 'video_url',
+        'type'  => 'text',
+        //'default'  => 'off',
+        //'options' => array('off'=>'Turn off','on'=>'Trun On'),
+        'context'  => 'normal'
+  );
 /****** Third Wunder Options ******/
